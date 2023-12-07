@@ -1,0 +1,51 @@
+﻿<Window x:Class="Flat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Interactive Map" Height="400" Width="600">
+    <Canvas Name="mapCanvas">
+
+        <Rectangle Width="100" Height="150" Fill="LightBlue" Canvas.Left="50" Canvas.Top="50" Tag="Спальня">
+            <Rectangle.ToolTip>
+                <ToolTip>
+                    <StackPanel>
+                        <TextBlock FontWeight="Bold">Спальня</TextBlock>
+                        <TextBlock>Описание комнаты...</TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Rectangle.ToolTip>
+        </Rectangle>
+
+        <Rectangle Width="100" Height="150" Fill="LightGreen" Canvas.Left="200" Canvas.Top="50" Tag="Кухня">
+            <Rectangle.ToolTip>
+                <ToolTip>
+                    <StackPanel>
+                        <TextBlock FontWeight="Bold">Кухня</TextBlock>
+                        <TextBlock>Описание комнаты...</TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Rectangle.ToolTip>
+        </Rectangle>
+
+        <Rectangle Width="100" Height="150" Fill="LightSalmon" Canvas.Left="50" Canvas.Top="250" Tag="Гостиная">
+            <Rectangle.ToolTip>
+                <ToolTip>
+                    <StackPanel>
+                        <TextBlock FontWeight="Bold">Гостиная</TextBlock>
+                        <TextBlock>Описание комнаты...</TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Rectangle.ToolTip>
+        </Rectangle>
+
+        <Rectangle Width="100" Height="150" Fill="LightPink" Canvas.Left="200" Canvas.Top="250" Tag="Ванна">
+            <Rectangle.ToolTip>
+                <ToolTip>
+                    <StackPanel>
+                        <TextBlock FontWeight="Bold">Ванна</TextBlock>
+                        <TextBlock>Описание комнаты...</TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Rectangle.ToolTip>
+        </Rectangle>
+    </Canvas>
+</Window>
